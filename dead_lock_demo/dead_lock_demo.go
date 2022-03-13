@@ -44,7 +44,7 @@ func main() {
 	log.Fatal(srv.ListenAndServe())
 }
 
-func goLoop(later loom.Later) {
+func goLoop(_ loom.Later) {
 	var lock sync.Mutex
 	f1(&lock)
 }
